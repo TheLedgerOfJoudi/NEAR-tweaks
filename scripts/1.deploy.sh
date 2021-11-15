@@ -12,8 +12,8 @@ echo ---------------------------------------------------------
 echo "Step 2: Deploy the contract"
 echo ---------------------------------------------------------
 
-near dev-deploy ../build/release/proj.wasm
-
+#near dev-deploy ../build/release/proj.wasm
+near deploy $CONTRACT.hdsaleh.testnet ../build/release/proj.wasm
 echo 'export CONTRACT=<dev-123-456>'
 
 exit 0
