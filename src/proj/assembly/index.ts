@@ -46,6 +46,9 @@ export function createAuction(biddingTime: u32) : u32 {
     return auction.id;
 }
 
+export function retOne() : u32 {
+    return 1;
+}
 //Used for bidding
 export function bid(auctionId: u32): boolean {
     const auction = auctions.getSome(auctionId);
